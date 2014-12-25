@@ -34,7 +34,7 @@ SMS SDK use project depend on the way to complete the integration.Specific steps
 
 ## Step 3 : Add code
 
-* init start SDK:
+* start SDK:
 ```
 SMSSDK.initSDK(this, "<appkey>", "<appsecret>");
 ```
