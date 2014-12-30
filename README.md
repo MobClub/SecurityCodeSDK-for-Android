@@ -14,7 +14,7 @@ SMS SDK use project depend on the way to complete the integration.Specific steps
 ## Step 2 : Configuration AndroidManifest. XML
 
 * Open your project "androidmanifest.xml", add the following permissions,then play under "application" to add the following activity:
-```
+```` xml
 <uses-permission android:name="android.permission.READ_CONTACTS" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -35,13 +35,13 @@ SMS SDK use project depend on the way to complete the integration.Specific steps
 ## Step 3 : Add code
 
 * start SDK:
-```
+```` java
 SMSSDK.initSDK(this, "<appkey>", "<appsecret>");
 ```
 * Gui
 
  SMS SDK with built-in GUI function of open source, you can by calling the following code to open the message validation page:
-```
+```` java
 RegisterPage registerPage = new RegisterPage();
 registerPage.setRegisterCallback(new EventHandler() {
 public void afterEvent(int event, int result, Object data) {
@@ -64,7 +64,7 @@ protected void onDestroy() {
 ```
 
  At the same time, SMS SDK are built through the device contacts for this application in the function of the user list, can use the following code to open the "contacts friends" page:
-```
+```` java
 ContactsPage contactsPage = new ContactsPage();
 contactsPage.show(context);
 ```
