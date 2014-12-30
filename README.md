@@ -58,9 +58,7 @@ registerUser(country, phone);
 registerPage.show(context);
 
 protected void onDestroy() {
-		if (ready) {
-			SMSSDK.unregisterAllEventHandler();
-		}
+		SMSSDK.unregisterAllEventHandler();
 		super.onDestroy();
 	}
 ```
