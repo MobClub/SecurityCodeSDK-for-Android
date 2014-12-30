@@ -7,9 +7,9 @@
 SMS SDK use project depend on the way to complete the integration.Specific steps are as follows:
 
 * 1.Copy "SMSSDK" directory to your own project in the same directory, and import it into Eclipse:
-  ![img](http://demo.mob.com/wiki/wp-content/uploads/2014/09/smssmdk_qi_21.png)
+  ![img](http://wiki.mob.com/wp-content/uploads/2014/09/QQ截图20141230112627.png)
 * 2.Right click your project, select "properties" in the sidebar, select "Android" in the pop-up window, and the reference projects selected "SMSSDK"
-  ![img](http://demo.mob.com/wiki/wp-content/uploads/2014/09/smssmdk_qi_31.png)
+  ![img](http://wiki.mob.com/wp-content/uploads/2014/09/QQ截图20141230112820.png)
 
 ## Step 2 : Configuration AndroidManifest. XML
 
