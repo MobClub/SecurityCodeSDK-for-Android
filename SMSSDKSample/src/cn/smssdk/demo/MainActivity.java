@@ -35,6 +35,8 @@ import cn.smssdk.gui.RegisterPage;
 public class MainActivity extends Activity implements OnClickListener, Callback {
 
 
+
+
 	// 填写从短信SDK应用后台注册得到的APPKEY
 	private static String APPKEY = "";
 
@@ -129,8 +131,6 @@ public class MainActivity extends Activity implements OnClickListener, Callback 
 		showDialog();
 		SMSSDK.getNewFriendsCount();
 
-		StatisticManager.initAnalysisSDK(MainActivity.this);
-		StatisticManager.registerAnalysisHandler(MainActivity.this);
 	}
 
 	private void loadSharePrefrence() {
@@ -159,7 +159,6 @@ public class MainActivity extends Activity implements OnClickListener, Callback 
 	protected void onResume() {
 		super.onResume();
 		if (ready) {
-			StatisticManager.onResume(MainActivity.this);
 			// 获取新好友个数
 			showDialog();
 			SMSSDK.getNewFriendsCount();
@@ -169,9 +168,6 @@ public class MainActivity extends Activity implements OnClickListener, Callback 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		if (ready) {
-			StatisticManager.onPause(MainActivity.this);
-		}
 	}
 
 	public void onClick(View v) {
